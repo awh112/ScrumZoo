@@ -142,6 +142,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Koala\Controllers\TestController.cs" />
+    <Compile Include="Areas\Koala\KoalaAreaRegistration.cs" />
+    <Compile Include="Areas\Penguin\PenguinAreaRegistration.cs" />
+    <Compile Include="Areas\Whale\WhaleAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -161,6 +165,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Areas\Penguin\Views\web.config" />
+    <Content Include="Areas\Koala\Views\web.config" />
+    <Content Include="Areas\Whale\Views\web.config" />
+    <Content Include="Areas\Koala\Views\Test\Index.cshtml" />
     <None Include="Properties\PublishProfiles\scrumpenguins - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\scrumpenguins2018 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -197,6 +205,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Koala\Models\" />
+    <Folder Include="Areas\Koala\Views\Shared\" />
+    <Folder Include="Areas\Penguin\Controllers\" />
+    <Folder Include="Areas\Penguin\Models\" />
+    <Folder Include="Areas\Penguin\Views\Shared\" />
+    <Folder Include="Areas\Whale\Controllers\" />
+    <Folder Include="Areas\Whale\Models\" />
+    <Folder Include="Areas\Whale\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
